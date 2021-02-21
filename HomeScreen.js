@@ -8,6 +8,7 @@ const Home = ({ navigation }) => (
   <View style={styles.container}>
     <Button title="Contacts" onPress={() => navigation.navigate('Contacts')} />
     <Button title="Camera" onPress={() => navigation.navigate('Camera')} />
+    <Button title="Bar code" onPress={() => navigation.navigate('BarCode')} />
   </View>
 );
 

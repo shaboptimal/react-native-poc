@@ -29,10 +29,6 @@ const CameraScreen = ({ navigation }) => {
     }
   };
 
-  const captureBarCode = ({ data }) => {
-    setBarCode(data);
-  }
-
   const { width, height } = Dimensions.get('window')
 
   return (
