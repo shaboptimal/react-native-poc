@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, SafeAreaView, View, Button, StyleSheet } from 'react-native';
 import styles from './Styles';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
-const CameraScreen = ({ navigation }) => {
+const BarCodeScreen = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const [barCode, setBarCode] = useState(null);
 
@@ -30,4 +30,4 @@ const CameraScreen = ({ navigation }) => {
   );
 };
 
-export default CameraScreen;
+export default BarCodeScreen;

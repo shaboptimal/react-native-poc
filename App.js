@@ -5,6 +5,7 @@ import HomeScreen from './HomeScreen';
 import ContactsScreen from './ContactsScreen';
 import CameraScreen from './CameraScreen';
 import BarCodeScreen from './BarCodeScreen';
+import SmsScreen from './SmsScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export default function App() {
         <Stack.Screen name="Contacts" component={ContactsScreen} />
         <Stack.Screen name="Camera" component={CameraScreen} />
         <Stack.Screen name="BarCode" component={BarCodeScreen} />
+        <Stack.Screen name="SMS" component={SmsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
