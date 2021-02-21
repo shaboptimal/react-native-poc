@@ -2,13 +2,11 @@ import React from 'react';
 import { SafeAreaView, Button } from 'react-native';
 import styles from './Styles';
 import * as SMS from 'expo-sms';
-import Constants from 'expo-constants';
 
 const SmsScreen = ({ navigation }) => {
   const sendSms = async () => {
     const isAvailable = await SMS.isAvailableAsync();
     if (isAvailable) {
-      console.log(Constants.manifest);
       const { result } = await SMS.sendSMSAsync(process.env.REACT_NATIVE_SMS_DEST, ':-)')
       console.log(result);
     } else {
