@@ -1,0 +1,14 @@
+import React from 'react';
+import { View, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import styles from './Styles';
+
+const Home = ({ navigation }) => (
+  <View style={styles.container}>
+    <Button title="Contacts" onPress={() => navigation.navigate('Contacts')} />
+    <Button title="Camera" onPress={() => navigation.navigate('Camera')} />
+  </View>
+);
+
+export default Home;
